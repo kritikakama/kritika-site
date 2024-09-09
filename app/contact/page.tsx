@@ -11,13 +11,13 @@ export default function Contact() {
     {
       title: "LinkedIn",
       desc: "Kritika's LinkedIn",
-      link: "https://www.linkedin.com/in/kritika",
+      link: "https://www.linkedin.com/in/kritikakama",
       showAnchorIcon: true,
     },
     {
       title: "GitHub",
       desc: "Kritika's GitHub",
-      link: "https://github.com/kritika",
+      link: "https://github.com/kritikakama",
       showAnchorIcon: true,
     },
   ];

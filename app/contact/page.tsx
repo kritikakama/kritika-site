@@ -11,7 +11,7 @@ export default function Contact() {
     {
       title: "LinkedIn",
       desc: "Kritika's LinkedIn",
-      link: "https://www.linkedin.com/in/kritikakama",
+      link: "https://www.linkedin.com/in/kritika-kama",
       showAnchorIcon: true,
     },
     {

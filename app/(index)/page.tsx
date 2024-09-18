@@ -41,38 +41,7 @@ export default function Home() {
     "shadow",
   ];
 
-  const sideProjects = [
-    {
-      title: "AI Hub powered by Cloudflare Worker AI",
-      desc: "Developed a project using Nuxt.js and Cloudflare Worker AI, facilitating users to multiple Cloudflare Worker AI functionalities. Integrated dark/light mode and OAuth login with GitHub for enhanced user experience. Additionally, empowered users to deploy their private AI sites.",
-      preview: "https://ai.larryxue.dev/",
-      github: "https://github.com/larry-xue/nuxt-chat-cloudflare",
-    },
-    {
-      title: "Larry Xue Site",
-      desc: "Built a personal website using Next.js and Next UI.",
-      preview: "https://larryxue.dev/",
-      github: "https://github.com/larry-xue/larry-xue-site",
-    },
-    {
-      title: "Weather App",
-      desc: "A simple weather app using Open-Meteo API and React.",
-      preview: "https://weather-app-react-75h.pages.dev/",
-      github: "https://github.com/larry-xue/weather-app-react",
-    },
-    {
-      title: "Folder to JSON",
-      desc: "Folder to JSON is a web application utilizing the showDirectoryPicker API to enable users to select a folder on their local machine. It recursively retrieves subdirectories to generate a JSON tree structure representing the directory hierarchy.",
-      preview: "https://folder2json.larryxue.dev/",
-      github: "https://github.com/larry-xue/folder-to-json",
-    },
-    {
-      title: "Vite Vue2 Starter Template",
-      desc: "vite-vue2-starter is a template for quickly starting Vue.js 2 projects. Built on the Vite v5 build tool",
-      preview: "",
-      github: "https://github.com/larry-xue/vite-vue2-starter",
-    },
-  ];
+  const sideProjects = [];
 
   const { isSmallScreen, showSideMenu } = useScreenSize();
   const _window = useWindow();

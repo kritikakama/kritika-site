@@ -111,6 +111,10 @@ export default function Home() {
           Education
         </h1>
         <div>
+          <h3 className="text-2xl font-bold">93.8%</h3>
+          <p className="text-lg">Mayura School, Jaipur(2019-20)</p>
+        </div>
+        <div>
           <h3 className="text-2xl font-bold">Commerce :87%</h3>
           <p className="text-lg">
             India International School (iis), Jaipur(2021-22)

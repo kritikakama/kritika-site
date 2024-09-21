@@ -54,6 +54,12 @@ export default function Home() {
       preview: "https://todolist-alpha-eosin.vercel.app/",
       github: "https://github.com/kritikakama/todolist",
     },
+    {
+      title: "pc-setup",
+      desc: "you can use this to download devtools cli apps in automation so it will save time ",
+      preview: "",
+      github: "https://github.com/kritikakama/pc-setup",
+    },
   ];
 
   const { isSmallScreen, showSideMenu } = useScreenSize();

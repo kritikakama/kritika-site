@@ -41,7 +41,20 @@ export default function Home() {
     "shadow",
   ];
 
-  const sideProjects = [];
+  const sideProjects = [
+    {
+      title: "portfolio",
+      desc: "hi this is my personal portfolio",
+      preview: "https://kritika-site.vercel.app/",
+      github: "https://github.com/kritikakama/todolist",
+    },
+    {
+      title: "todo list",
+      desc: "developed a project using jsx and it just basically add the todo delete and edit them and the mouse have bubble effect",
+      preview: "https://todolist-alpha-eosin.vercel.app/",
+      github: "https://github.com/kritikakama/todolist",
+    },
+  ];
 
   const { isSmallScreen, showSideMenu } = useScreenSize();
   const _window = useWindow();
@@ -113,6 +126,7 @@ export default function Home() {
         <div>
           <h3 className="text-2xl font-bold">93.8%</h3>
           <p className="text-lg">Mayura School, Jaipur(2019-20)</p>
+          <br />
         </div>
         <div>
           <h3 className="text-2xl font-bold">Commerce :87%</h3>
@@ -135,6 +149,51 @@ export default function Home() {
         <h1 className="hover:text-shadow-3 m-0 font-heading text-[clamp(3rem,_10vw,_4.5rem)] font-black tracking-[-0.2rem] transition-all duration-300">
           Side Projects
         </h1>
+        <div className="flex flex-wrap gap-4">
+          {sideProjects.map((project) => (
+            <Card className="md:w-[300px] w-full" key={project.github}>
+              <CardHeader className="flex gap-3">
+                <h2 className="text-md">{project.title}</h2>
+              </CardHeader>
+              <Divider />
+              <CardBody>
+                {project.preview &&
+                _window?.self === _window?.top &&
+                !isSmallScreen ? (
+                  <div className="flex gap-2 h-[400px]">
+                    <p className="text-sm w-1/3 text-gray-500 dark:text-gray-400 leading-loose">
+                      {project.desc}
+                    </p>
+                    <PreviewIframe url={project.preview} />
+                  </div>
+                ) : (
+                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-loose">
+                    {project.desc}
+                  </p>
+                )}
+              </CardBody>
+              <Divider />
+              <CardFooter className="flex gap-3">
+                <Link
+                  isExternal
+                  showAnchorIcon
+                  href={project.preview}
+                  isDisabled={!project.preview}
+                >
+                  Preview
+                </Link>
+                <Link
+                  isExternal
+                  showAnchorIcon
+                  href={project.github}
+                  isDisabled={!project.github}
+                >
+                  GitHub
+                </Link>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
     </>
   );

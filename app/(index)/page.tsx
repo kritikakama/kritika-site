@@ -57,7 +57,6 @@ export default function Home() {
     {
       title: "pc-setup",
       desc: "you can use this to download devtools cli apps in automation so it will save time ",
-      preview: "",
       github: "https://github.com/kritikakama/pc-setup",
     },
   ];
